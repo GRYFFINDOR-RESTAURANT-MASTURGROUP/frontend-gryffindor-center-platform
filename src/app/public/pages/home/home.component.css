@@ -1,0 +1,74 @@
+.header {
+  text-align: center;
+  color: #FEC308;
+}
+
+.mat-card {
+  color: #831111;
+  margin: 10px auto;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  max-width: 600px;
+  background-color: #FEC308;
+}
+
+.mat-button-toggle {
+  background-color: #831111;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+.mat-button-toggle:hover {
+  background-color: #831111;
+}
+
+.title {
+  color: azure;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.subtitle {
+  color: azure;
+  padding-bottom: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+section {
+  flex: 1;
+}
+
+.footer {
+  text-align: center;
+  color: #FEC308;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #831111;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .mat-card {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .mat-button-toggle {
+    padding: 8px 16px;
+    margin: 5px 0;
+    width: calc(100% - 20px); /* Adjust width to fit within the card */
+  }
+
+  .title, .subtitle {
+    padding: 10px 0;
+  }
+}
