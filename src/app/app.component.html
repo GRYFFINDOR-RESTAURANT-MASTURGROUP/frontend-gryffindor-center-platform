@@ -1,1 +1,8 @@
-<app-home></app-home>
+<mat-toolbar class="toolbar">
+  <h1><strong>Si eres cliente: </strong></h1>
+  <div class="mat-spacer"></div>
+  <ng-container *ngFor="let option of options">
+    <mat-button-toggle [routerLink]="option.path">{{ option.title }}</mat-button-toggle>
+  </ng-container>
+</mat-toolbar>
+<router-outlet></router-outlet>
