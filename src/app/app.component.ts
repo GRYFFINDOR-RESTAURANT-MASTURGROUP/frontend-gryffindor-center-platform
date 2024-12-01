@@ -16,4 +16,7 @@ export class AppComponent {
     {path: '/sign-up', title: 'Registrarse'},
     {path: '/sign-in', title: 'Iniciar sesión'},
   ]
+  option = [
+    {path: '/sign-in-admin', title: 'Iniciar sesión como administrador'},
+  ]
 }

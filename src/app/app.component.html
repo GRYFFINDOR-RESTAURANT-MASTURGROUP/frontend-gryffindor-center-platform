@@ -8,5 +8,9 @@
   <img src="assets/images/inicio-icon.png">
   </a>
   <h1><strong>Si eres administrador: </strong></h1>
+  <div class="mat-spacer"></div>
+  <ng-container *ngFor="let option of option">
+    <mat-button-toggle [routerLink]="option.path">{{ option.title }}</mat-button-toggle>
+  </ng-container>
 </mat-toolbar>
-<router-outlet></router-outlet>
+<router-outlet/>

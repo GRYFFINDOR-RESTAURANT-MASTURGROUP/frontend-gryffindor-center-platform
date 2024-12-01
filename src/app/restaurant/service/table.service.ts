@@ -9,6 +9,6 @@ export class TableService extends BaseService<Table>{
 
   constructor() {
     super();
-    this.resourceEndpoint = '/tables';
+    this.resourceEndpoint = '/mesas';
   }
 }

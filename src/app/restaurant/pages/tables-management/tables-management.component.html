@@ -1,0 +1,36 @@
+<div class="table-wrapper">
+  <h1>Mesas</h1>
+  <app-table-create-and-edit
+    (cancelRequested)="onCancelRequested()"
+    (tableAddRequested)="onTableAddRequested($event)"
+    (tableUpdateRequested)="onTableUpdateRequested($event)"
+    [table]="tableData"
+    [editMode]="editMode"/>
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by ID"> Nro. de Mesa</th>
+      <td mat-cell *matCellDef="let table"> {{ table.id }}</td>
+    </ng-container>
+    <ng-container matColumnDef="chairs">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Chairs"> Sillas</th>
+      <td mat-cell *matCellDef="let table"> {{ table.chairs }}</td>
+    </ng-container>
+    <ng-container matColumnDef="state">
+      <th mat-header-cell *matHeaderCellDef>Estado</th>
+    </ng-container>
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef> Acciones</th>
+      <td mat-cell *matCellDef="let table">
+        <a (click)="onEditItem(table)" href="javascript:void(0)"><mat-icon>edit</mat-icon></a>
+        <a (click)="onDeleteItem(table)" href="javascript:void(0)"><mat-icon>delete</mat-icon></a>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr *matRowDef="let row; columns: columnsToDisplay;"
+        [ngClass]="{ 'editable-row' : tableData && tableData.id === row.id }" mat-row></tr>
+  </table>
+  <mat-paginator [pageSizeOptions]="[5, 10, 15]"
+                 [pageSize]="5"
+                 showFirstLastButtons></mat-paginator>
+</div>
