@@ -1,13 +1,11 @@
 import  {Component, inject, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {MatButton} from "@angular/material/button";
 import {MatButtonToggle} from '@angular/material/button-toggle';
 
 @Component({
   selector: 'app-page-not-found',
   standalone: true,
   imports: [
-    MatButton,
     MatButtonToggle
   ],
   templateUrl: './page-not-found.component.html',

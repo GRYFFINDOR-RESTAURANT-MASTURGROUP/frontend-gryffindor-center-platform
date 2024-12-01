@@ -4,5 +4,9 @@
   <ng-container *ngFor="let option of options">
     <mat-button-toggle [routerLink]="option.path">{{ option.title }}</mat-button-toggle>
   </ng-container>
+  <a [routerLink]="['/home']" class="logo">
+  <img src="assets/images/inicio-icon.png">
+  </a>
+  <h1><strong>Si eres administrador: </strong></h1>
 </mat-toolbar>
 <router-outlet></router-outlet>
