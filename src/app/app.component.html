@@ -1,16 +1,16 @@
 <mat-toolbar class="toolbar">
   <h1><strong>Si eres cliente: </strong></h1>
   <div class="mat-spacer"></div>
-  <ng-container *ngFor="let option of options">
-    <mat-button-toggle [routerLink]="option.path">{{ option.title }}</mat-button-toggle>
+  <ng-container *ngFor="let optionsA of options_customer">
+    <mat-button-toggle [routerLink]="optionsA.path">{{ optionsA.title }}</mat-button-toggle>
   </ng-container>
   <a [routerLink]="['/home']" class="logo">
   <img src="assets/images/inicio-icon.png">
   </a>
   <h1><strong>Si eres administrador: </strong></h1>
   <div class="mat-spacer"></div>
-  <ng-container *ngFor="let option of option">
-    <mat-button-toggle [routerLink]="option.path">{{ option.title }}</mat-button-toggle>
+  <ng-container *ngFor="let optionB of option_admin">
+    <mat-button-toggle [routerLink]="optionB.path">{{ optionB.title }}</mat-button-toggle>
   </ng-container>
 </mat-toolbar>
 <router-outlet/>

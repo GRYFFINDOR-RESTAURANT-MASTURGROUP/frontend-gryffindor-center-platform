@@ -1,0 +1,45 @@
+.sign-in-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://postimg.cc/Btz66DBG");
+  background-size: cover;
+  background-position: center;
+}
+
+.login-card {
+  border-radius: 10px;
+  width: 350px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #e74c3c;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #c0392b;
+}
+
+mat-form-field mat-label {
+  font-size: 1rem;
+}
+
+mat-error {
+  color: red;
+}

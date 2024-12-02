@@ -4,6 +4,7 @@ import {MatButtonToggle} from '@angular/material/button-toggle';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
   imports: [
     MatCard,
     MatCardTitle,
