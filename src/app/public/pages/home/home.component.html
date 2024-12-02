@@ -7,8 +7,8 @@
     <mat-card-title class="title"><strong> Haz tu reserva fácilmente </strong></mat-card-title>
     <mat-card-content class="subtitle">Para hacer una reserva, primero <strong>Regístrate</strong> o <strong>Inicia sesión</strong></mat-card-content>
     <mat-card-content>
-        <mat-button-toggle class="mat-button-toggle">Registrarse</mat-button-toggle>
-        <mat-button-toggle class="mat-button-toggle">Iniciar sesión</mat-button-toggle>
+      <mat-button-toggle class="mat-button-toggle" [routerLink]="['/sign-up']">Registrarse</mat-button-toggle>
+      <mat-button-toggle class="mat-button-toggle" [routerLink]="['/sign-in']">Iniciar sesión</mat-button-toggle>
     </mat-card-content>
   </mat-card>
   <div class="image-gallery">
@@ -23,5 +23,3 @@
   <p>MADE BY +TURDEVS ENTERPRISES</p>
 </footer>
 </body>
-
-

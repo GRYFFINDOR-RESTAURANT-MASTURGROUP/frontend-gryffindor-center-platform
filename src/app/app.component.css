@@ -9,3 +9,21 @@
   margin: 0 auto;
   transform: translateX(+100%);
 }
+
+.mat-button-toggle {
+  background-color: #831111;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 10px;
+  transition: transform 0.2s ease;
+}
+
+.mat-button-toggle:hover {
+  transform: scale(1.1);
+}
+
+.mat-button-toggle-checked {
+  background-color: #831111 !important;
+  color: white !important;
+}

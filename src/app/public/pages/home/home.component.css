@@ -16,7 +16,7 @@
 .mat-button-toggle {
   background-color: #831111;
   color: white;
-  border-radius: 5px;
+  border-radius: 50px;
   padding: 10px 20px;
   margin: 0 10px;
   transition: transform 0.2s ease;

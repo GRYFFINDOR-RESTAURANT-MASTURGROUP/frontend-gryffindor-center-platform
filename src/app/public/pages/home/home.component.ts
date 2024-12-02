@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {MatCard, MatCardContent, MatCardTitle} from '@angular/material/card';
 import {MatButtonToggle} from '@angular/material/button-toggle';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,8 @@ import {MatButtonToggle} from '@angular/material/button-toggle';
     MatCard,
     MatCardTitle,
     MatCardContent,
-    MatButtonToggle
+    MatButtonToggle,
+    RouterLink
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
