@@ -6,7 +6,7 @@ import {SignInRequest} from "../../model/sign-in.request";
 import {MatCard, MatCardContent, MatCardHeader, MatCardTitle} from "@angular/material/card";
 import {MatError, MatFormField} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
-import {MatButton} from "@angular/material/button";
+import {MatButtonToggle} from '@angular/material/button-toggle';
 
 /**
  * Sign in component
@@ -23,7 +23,7 @@ import {MatButton} from "@angular/material/button";
     ReactiveFormsModule,
     MatFormField,
     MatInput,
-    MatButton
+    MatButtonToggle
   ],
   templateUrl: './sign-in.component.html',
   styleUrl: './sign-in.component.css'

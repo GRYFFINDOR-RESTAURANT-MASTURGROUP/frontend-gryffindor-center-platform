@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://postimg.cc/Btz66DBG");
   background-size: cover;
   background-position: center;
 }
@@ -12,6 +11,9 @@
   width: 350px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+  background-color: #FEC308;
+  margin-bottom: 80px;
 }
 
 .title {
@@ -19,6 +21,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #333;
+  margin-bottom: 20px;
 }
 
 .form-field {
@@ -26,14 +29,15 @@
   margin-bottom: 20px;
 }
 
-.submit-btn {
+.button {
   width: 100%;
-  background-color: #e74c3c;
+  background-color: black;
   color: white;
+  transition: transform 0.2s ease;
 }
 
-.submit-btn:hover {
-  background-color: #c0392b;
+.button:hover {
+  transform: scale(1.1);
 }
 
 mat-form-field mat-label {

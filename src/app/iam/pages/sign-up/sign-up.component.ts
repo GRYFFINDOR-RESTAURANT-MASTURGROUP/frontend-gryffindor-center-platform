@@ -3,10 +3,10 @@ import {BaseFormComponent} from "../../../shared/components/base-form.component"
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {AuthenticationService} from "../../services/authentication.service";
 import {SignUpRequest} from "../../model/sign-up.request";
-import {MatButton} from "@angular/material/button";
 import {MatCard, MatCardContent, MatCardHeader, MatCardTitle} from "@angular/material/card";
 import {MatError, MatFormField} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
+import {MatButtonToggle} from '@angular/material/button-toggle';
 
 /**
  * Sign up component
@@ -15,7 +15,6 @@ import {MatInput} from "@angular/material/input";
   selector: 'app-sign-up',
   standalone: true,
   imports: [
-    MatButton,
     MatCard,
     MatCardContent,
     MatCardHeader,
@@ -24,6 +23,7 @@ import {MatInput} from "@angular/material/input";
     MatFormField,
     MatInput,
     ReactiveFormsModule,
+    MatButtonToggle,
   ],
   templateUrl: './sign-up.component.html',
   styleUrl: './sign-up.component.css'

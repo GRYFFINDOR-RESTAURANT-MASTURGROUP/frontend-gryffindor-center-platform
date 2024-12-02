@@ -2,5 +2,48 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.sign-up-card {
+  border-radius: 10px;
+  width: 350px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+  background-color: #FEC308;
+  margin-bottom: 80px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+mat-form-field mat-label {
+  font-size: 1rem;
+}
+
+mat-error {
+  color: red;
 }
